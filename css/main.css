@@ -58,6 +58,97 @@ table {
 /* Computer */
 /* Font imports */
 /* Open Sans variations */
+.container {
+  width: 100%;
+  font-family: "Open Sans", "sans serif";
+}
+.container .-header {
+  display: block;
+}
+.container .-header .purple-shape {
+  background-color: #422755;
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 90%);
+}
+@media only screen and (max-width: 768px) {
+  .container .-header .purple-shape {
+    height: 160px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .container .-header .purple-shape {
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .container .-header .purple-shape {
+    height: 381px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container .-header .-title {
+    position: relative;
+    top: -5rem;
+    color: #FFF;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 1rem;
+  }
+  .container .-header .-subtitle {
+    display: block;
+    padding: 0 2rem 2rem 2rem;
+    color: #422755;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .container .-header .-title {
+    position: relative;
+    top: -9rem;
+    color: #FFF;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 1rem;
+  }
+  .container .-header .-subtitle {
+    position: relative;
+    top: -7rem;
+    display: block;
+    padding: 0 2rem 2rem 2rem;
+    color: #FFF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .container .-header .-title {
+    position: relative;
+    top: -14rem;
+    color: #FFF;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1rem;
+  }
+  .container .-header .-subtitle {
+    position: relative;
+    top: -11rem;
+    display: block;
+    padding: 0 2rem 2rem 2rem;
+    color: #FFF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+}
+
 /* Imports */
 /* Main colors */
 /* More colors */
