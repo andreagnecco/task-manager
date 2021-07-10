@@ -94,5 +94,26 @@
     line-height: 1.3rem;
   }
 }
+.container .-nav {
+  display: flex;
+  justify-content: center;
+  background-color: #FFF;
+  margin-bottom: 2.5rem;
+}
+@media only screen and (min-width: 1025px) {
+  .container .-nav {
+    margin-bottom: 4rem;
+  }
+}
+.container .-nav .wrapper-navbar {
+  padding: 1.5rem 1rem;
+  width: 85%;
+  max-width: 1080px;
+  height: 100%;
+  border-radius: 8px;
+  color: #FFF;
+  font-weight: 600;
+  background-color: #FEAF3D;
+}
 
 /*# sourceMappingURL=containers.css.map */

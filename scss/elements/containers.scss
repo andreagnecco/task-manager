@@ -11,13 +11,13 @@
         .purple-shape {
             background-color: $primary-color-violet;
             clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 90%);
-            @include responsive_mobile {
+            @include responsive_mobile() {
                 height: 160px;
             }
-            @include responsive_tablet {
+            @include responsive_tablet() {
                 height: 250px;
             }
-            @include responsive_computer {
+            @include responsive_computer() {
                 height: 381px;
             }
         }
@@ -84,6 +84,25 @@
                 font-size: 1.2rem;
                 line-height: 1.3rem;
             }
+        }
+    }
+    .-nav {
+        display: flex;
+        justify-content: center;
+        background-color: $all-white;
+        margin-bottom: 2.5rem;
+        @include responsive_computer {
+            margin-bottom: 4rem;
+        }
+        .wrapper-navbar {
+            padding: 1.5rem 1rem;
+            width: 85%;
+            max-width: 1080px;
+            height: 100%;
+            border-radius: 8px;
+            color: $all-white;
+            font-weight: $font-weight-semibold;
+            background-color: $secondary-color-orange;
         }
     }
 }
