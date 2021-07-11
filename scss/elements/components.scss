@@ -4,3 +4,16 @@
   @import '../settings/_responsive_mixins.scss';
   @import '../settings/_typography.scss';
   
+
+.input-component {
+  font-family: $font-project;
+  font-weight: $font-weight-regular;
+  font-size: 0.75rem;
+  color: $medium-gray;
+  padding: 0 16px;
+  width: 276px;
+  height: 34px;
+  border: none;
+  border-radius: 8px;
+  margin: 8px 10px 16px 0;
+}
