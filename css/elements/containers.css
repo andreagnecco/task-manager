@@ -118,6 +118,20 @@
   font-weight: 600;
   background-color: #FEAF3D;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container .-nav .wrapper-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container .-nav .wrapper-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .container .-nav .wrapper-navbar .navbar-search {
   display: flex;
   justify-content: center;

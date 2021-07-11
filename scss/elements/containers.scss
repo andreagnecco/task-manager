@@ -106,6 +106,16 @@
             color: $all-white;
             font-weight: $font-weight-semibold;
             background-color: $secondary-color-orange;
+            @include responsive_tablet() {
+                display: flex;
+                flex-direction: row;
+                justify-content:space-around ;
+            }
+            @include responsive_computer() {
+                display: flex;
+                flex-direction: row;
+                justify-content:space-around ;
+            }
             .navbar-search {
                 display: flex;
                 justify-content: center;
