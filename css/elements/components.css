@@ -17,7 +17,14 @@
   height: 34px;
   border: none;
   border-radius: 8px;
-  margin: 8px 0 8px 0;
+  margin: 8px 10px 16px 0;
+}
+
+.button-component {
+  background-color: #6E4B87;
+  padding: 17px;
+  border: none;
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=components.css.map */

@@ -111,7 +111,7 @@
                 flex-direction: row;
                 justify-content:space-around ;
             }
-            @include responsive_tablet() {
+            @include responsive_computer() {
                 display: flex;
                 flex-direction: row;
                 justify-content:space-around ;
