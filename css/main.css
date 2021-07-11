@@ -288,6 +288,18 @@ table {
     padding-bottom: 1rem;
   }
 }
+.container .-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 126px;
+  background-color: #422755;
+  text-align: center;
+  color: #FFF;
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+}
 
 /* Imports */
 /* Main colors */
