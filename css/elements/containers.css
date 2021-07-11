@@ -135,6 +135,7 @@
 .container .-nav .wrapper-navbar .navbar-search {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .container .-main {
   display: flex;

@@ -186,6 +186,7 @@ table {
 .container .-nav .wrapper-navbar .navbar-search {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .container .-main {
   display: flex;
@@ -341,7 +342,7 @@ table {
   height: 34px;
   border: none;
   border-radius: 8px;
-  margin: 8px 10px 16px 0;
+  margin: 8px 0 8px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
