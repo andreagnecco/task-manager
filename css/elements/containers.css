@@ -135,6 +135,18 @@
 .container .-nav .wrapper-navbar .navbar-search {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.container .-nav .wrapper-navbar .navbar-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .container .-nav .wrapper-navbar .navbar-select {
+    padding-top: 20px;
+  }
 }
 .container .-main {
   display: flex;

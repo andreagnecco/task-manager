@@ -119,6 +119,16 @@
             .navbar-search {
                 display: flex;
                 justify-content: center;
+                align-items: center;
+            }
+            .navbar-select {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                @include responsive_mobile() {
+                    padding-top: 20px;
+                }
             }
         }
     }
