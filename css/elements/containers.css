@@ -106,6 +106,9 @@
   }
 }
 .container .-nav .wrapper-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1.5rem 1rem;
   width: 85%;
   max-width: 1080px;
@@ -114,6 +117,10 @@
   color: #FFF;
   font-weight: 600;
   background-color: #FEAF3D;
+}
+.container .-nav .wrapper-navbar .navbar-search {
+  display: flex;
+  justify-content: center;
 }
 .container .-main {
   display: flex;
