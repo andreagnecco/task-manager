@@ -1,9 +1,8 @@
-  /* Imports */
+/* Imports */
 
-  @import '../settings/_colors.scss';
-  @import '../settings/_responsive_mixins.scss';
-  @import '../settings/_typography.scss';
-  
+@import "../settings/_colors.scss";
+@import "../settings/_responsive_mixins.scss";
+@import "../settings/_typography.scss";
 
 .input-component {
   font-family: $font-project;
@@ -20,7 +19,68 @@
 
 .button-component {
   background-color: $light-violet;
-  padding: 17px;
+  padding: 9px 12px;
   border: none;
   border-radius: 8px;
+  margin-left: -10%;
+  font-family: $font-project;
+  font-size: 0.8rem;
+  font-weight: $font-weight-bold;
+  color: $all-white;
+  cursor: pointer;
+}
+
+.-more {
+  @extend .button-component;
+  font-size: 1rem;
+  margin-left: 0;
+  width: 155px;
+  height: auto;
+  align-self: center;
+  @include responsive_tablet() {
+    width: 170px;
+    height: auto;
+  }
+  @include responsive_computer() {
+    width: 200px;
+    height: auto;
+  }
+}
+
+.-register {
+  @extend .button-component;
+  margin-left: 0;
+  align-self: flex-end;
+  margin: 8px 0 8px 0;
+}
+
+.-done {
+  @extend .button-component;
+  font-size: 1.1rem;
+  font-weight: $font-weight-bold;
+  width: 155px;
+  height: 30px;
+  padding: 0;
+  margin-left: 0;
+  background-color: $all-white;
+  color: $primary-color-violet;
+  border: 1px solid $primary-color-violet;
+  @include responsive_tablet() {
+    display: none;
+    font-weight: $font-weight-bold;
+    width: 170px;
+    height: auto;
+    padding: 9px 12px;
+    background-color: $primary-color-violet;
+    color: $all-white;
+  }
+  @include responsive_computer() {
+    display: none;
+    font-weight: $font-weight-bold;
+    width: 218px;
+    height: auto;
+    padding: 9px 12px;
+    background-color: $primary-color-violet;
+    color: $all-white;
+  }
 }

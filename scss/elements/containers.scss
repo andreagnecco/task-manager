@@ -109,12 +109,12 @@
             @include responsive_tablet() {
                 display: flex;
                 flex-direction: row;
-                justify-content:space-around ;
+                justify-content: space-around;
             }
             @include responsive_computer() {
                 display: flex;
                 flex-direction: row;
-                justify-content:space-around ;
+                justify-content: space-around;
             }
             .navbar-search {
                 display: flex;
@@ -126,8 +126,12 @@
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
-                @include responsive_mobile() {
-                    padding-top: 20px;
+                padding-top: 20px;
+                @include responsive_tablet() {
+                    padding-top: 0;
+                }
+                @include responsive_computer() {
+                    padding-top: 0;
                 }
             }
         }
@@ -162,6 +166,15 @@
             @include responsive_tablet() {
                 display: block;
             }
+
+            .wrapper-fieldset {
+                display: flex;
+                flex-direction: column;
+                @include responsive_computer() {
+                    flex-direction: row;
+                }
+            }
+
             .text-legend {
                 color: $light-violet;
                 font-size: 0.8rem;

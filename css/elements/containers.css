@@ -142,10 +142,16 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding-top: 20px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container .-nav .wrapper-navbar .navbar-select {
-    padding-top: 20px;
+    padding-top: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container .-nav .wrapper-navbar .navbar-select {
+    padding-top: 0;
   }
 }
 .container .-main {
@@ -184,6 +190,15 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container .-main .wrapper-form {
     display: block;
+  }
+}
+.container .-main .wrapper-form .wrapper-fieldset {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1024px) {
+  .container .-main .wrapper-form .wrapper-fieldset {
+    flex-direction: row;
   }
 }
 .container .-main .wrapper-form .text-legend {

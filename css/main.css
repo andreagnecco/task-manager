@@ -193,10 +193,16 @@ table {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding-top: 20px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container .-nav .wrapper-navbar .navbar-select {
-    padding-top: 20px;
+    padding-top: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container .-nav .wrapper-navbar .navbar-select {
+    padding-top: 0;
   }
 }
 .container .-main {
@@ -235,6 +241,15 @@ table {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container .-main .wrapper-form {
     display: block;
+  }
+}
+.container .-main .wrapper-form .wrapper-fieldset {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1024px) {
+  .container .-main .wrapper-form .wrapper-fieldset {
+    flex-direction: row;
   }
 }
 .container .-main .wrapper-form .text-legend {
@@ -356,11 +371,77 @@ table {
   margin: 8px 12px 8px 0;
 }
 
-.button-component {
+.button-component, .-done, .-register, .-more {
   background-color: #6E4B87;
-  padding: 17px;
+  padding: 9px 12px;
   border: none;
   border-radius: 8px;
+  margin-left: -10%;
+  font-family: "Open Sans", "sans serif";
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.-more {
+  font-size: 1rem;
+  margin-left: 0;
+  width: 155px;
+  height: auto;
+  align-self: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .-more {
+    width: 170px;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .-more {
+    width: 200px;
+    height: auto;
+  }
+}
+
+.-register {
+  margin-left: 0;
+  align-self: flex-end;
+  margin: 8px 0 8px 0;
+}
+
+.-done {
+  font-size: 1.1rem;
+  font-weight: 700;
+  width: 155px;
+  height: 30px;
+  padding: 0;
+  margin-left: 0;
+  background-color: #FFF;
+  color: #422755;
+  border: 1px solid #422755;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .-done {
+    display: none;
+    font-weight: 700;
+    width: 170px;
+    height: auto;
+    padding: 9px 12px;
+    background-color: #422755;
+    color: #FFF;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .-done {
+    display: none;
+    font-weight: 700;
+    width: 218px;
+    height: auto;
+    padding: 9px 12px;
+    background-color: #422755;
+    color: #FFF;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
