@@ -140,17 +140,21 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         background-color: $all-white;
         margin-bottom: 2.5rem;
         @include responsive_computer() {
             margin-bottom: 4rem;
         }
         .wrapper-articles {
-            width: 85%;
-            max-width: 1080px;
+            max-width: 698px;
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             margin-bottom: 2rem;
+            @include responsive_tablet() {
+                max-width: 900px;
+            }
         }
         .wrapper-form {
             padding: 1.5rem 3rem;

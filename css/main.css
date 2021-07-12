@@ -209,6 +209,7 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #FFF;
   margin-bottom: 2.5rem;
 }
@@ -218,11 +219,16 @@ table {
   }
 }
 .container .-main .wrapper-articles {
-  width: 85%;
-  max-width: 1080px;
+  max-width: 698px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 2rem;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container .-main .wrapper-articles {
+    max-width: 900px;
+  }
 }
 .container .-main .wrapper-form {
   padding: 1.5rem 3rem;
@@ -371,7 +377,7 @@ table {
   margin: 8px 12px 8px 0;
 }
 
-.button-component, .-done, .-register, .-more {
+.button-component, .-time, .-done, .-register, .-more {
   background-color: #6E4B87;
   padding: 9px 12px;
   border: none;
@@ -413,7 +419,7 @@ table {
 .-done {
   font-size: 1.1rem;
   font-weight: 700;
-  width: 155px;
+  width: 100%;
   height: 30px;
   padding: 0;
   margin-left: 0;
@@ -424,8 +430,9 @@ table {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .-done {
     display: none;
+  }
+  .-done :hover {
     font-weight: 700;
-    width: 170px;
     height: auto;
     padding: 9px 12px;
     background-color: #422755;
@@ -435,13 +442,130 @@ table {
 @media only screen and (min-width: 1024px) {
   .-done {
     display: none;
+  }
+  .-done :hover {
     font-weight: 700;
-    width: 218px;
     height: auto;
     padding: 9px 12px;
     background-color: #422755;
     color: #FFF;
   }
+}
+
+.-time {
+  display: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .-time {
+    display: none;
+  }
+  .-time :hover {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    width: 170px;
+    height: auto;
+    padding: 9px 12px;
+    background-color: #F04837;
+    color: #FFF;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .-time {
+    display: none;
+  }
+  .-time :hover {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 700;
+    width: 218px;
+    height: auto;
+    padding: 9px 12px;
+    background-color: #F04837;
+    color: #FFF;
+  }
+}
+
+.card-task {
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
+  border: 2px solid #000;
+  border-radius: 14px;
+  padding: 0.8rem;
+  margin-bottom: 1.3rem;
+}
+
+.card-tag {
+  display: block;
+  position: relative;
+  z-index: 2;
+  top: 3rem;
+  right: 0.1rem;
+  background-color: #422755;
+  width: 102px;
+  height: 29px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5rem;
+  color: #FFF;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.card-image {
+  position: relative;
+  z-index: 1;
+  align-self: baseline;
+  clip-path: inset(178px 147px);
+}
+
+.wrapper-card-info {
+  text-align: left;
+  align-self: center;
+  margin: 0 2px 0 15px;
+}
+.wrapper-card-info .-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: #414141;
+}
+.wrapper-card-info .-title .clock-button {
+  background-color: #FFF;
+  border: none;
+}
+.wrapper-card-info .-description {
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+.wrapper-card-info .-description .--legend {
+  font-size: 0.6rem;
+  margin-top: 0.5rem;
+  color: #414141;
+}
+.wrapper-card-info .-description :first-child {
+  margin-bottom: 0.5rem;
+}
+.wrapper-card-info .wrapper-deadline {
+  display: flex;
+  flex-direction: row;
+}
+.wrapper-card-info .wrapper-deadline .-text {
+  font-weight: 700;
+}
+.wrapper-card-info .wrapper-deadline .-days {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #F04837;
+  margin-left: 0.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
