@@ -147,14 +147,11 @@
             margin-bottom: 4rem;
         }
         .wrapper-articles {
-            max-width: 698px;
             display: flex;
             flex-wrap: wrap;
+            max-width: 697px;
             justify-content: center;
             margin-bottom: 2rem;
-            @include responsive_tablet() {
-                max-width: 900px;
-            }
         }
         .wrapper-form {
             padding: 1.5rem 3rem;
