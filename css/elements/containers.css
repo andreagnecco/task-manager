@@ -110,11 +110,11 @@
   flex-direction: column;
   align-items: center;
   padding: 1.5rem 1rem;
-  width: 85%;
-  max-width: 1080px;
+  max-width: 300px;
   height: 100%;
   border-radius: 8px;
   color: #FFF;
+  font-size: 0.8rem;
   font-weight: 600;
   background-color: #FEAF3D;
 }
@@ -123,6 +123,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    min-width: 700px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -130,19 +131,21 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    min-width: 1000px;
+    max-width: 1080px;
   }
 }
 .container .-nav .wrapper-navbar .navbar-search {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 20rem;
 }
 .container .-nav .wrapper-navbar .navbar-select {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding-top: 20px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container .-nav .wrapper-navbar .navbar-select {

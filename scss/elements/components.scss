@@ -10,12 +10,25 @@
   font-size: 0.75rem;
   color: $medium-gray;
   padding: 0 16px;
-  width: 276px;
+  width: 245px;
   height: 34px;
   border: none;
   border-radius: 8px;
   margin: 8px 12px 8px 0;
 }
+
+.-label {
+  margin-right: 0.5rem;
+}
+
+.-select {
+  @extend .input-component; 
+    width: 194px;
+    margin: 8px 0px 0px 0;
+  }
+  
+
+
 
 .button-component {
   background-color: $light-violet;
@@ -122,11 +135,11 @@
   .card-task {
     display: flex;
     flex-direction: row;
-    width: 20rem;
+    max-width: 350px;
     border: 2px solid $black-box;
     border-radius: 14px;
     padding: 0.8rem;
-    margin-bottom: 1.3rem;
+    margin: 0.8rem;
   }
 
   .card-tag {
@@ -151,6 +164,7 @@
     position: relative;
     z-index: 1;
     align-self: baseline;
+    -webkit-clip-path: inset(178px 147px);
     clip-path: inset(178px 147px);
   }
 
