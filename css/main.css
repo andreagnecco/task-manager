@@ -232,7 +232,8 @@ table {
   padding: 1.5rem 3rem;
   align-self: center;
   text-decoration-line: none;
-  width: 60%;
+  min-width: 600px;
+  max-width: 876px;
   background-color: #E5E5E5;
   border-radius: 8px;
   margin-top: 5rem;
