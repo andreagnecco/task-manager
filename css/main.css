@@ -224,7 +224,7 @@ table {
 .container .-main .wrapper-articles {
   display: flex;
   flex-wrap: wrap;
-  max-width: 697px;
+  max-width: 1080px;
   justify-content: center;
   margin-bottom: 2rem;
 }
@@ -386,7 +386,7 @@ table {
   margin: 8px 0px 0px 0;
 }
 
-.button-component, .-time, .-done, .-register, .-more {
+.button-component, .-time, .-done-2, .-done, .-register, .-more {
   background-color: #6E4B87;
   padding: 9px 12px;
   border: none;
@@ -447,41 +447,44 @@ table {
   .-done {
     display: none;
   }
-  .-done :hover {
-    font-weight: 700;
-    height: auto;
-    padding: 9px 12px;
-    background-color: #422755;
-    color: #FFF;
-  }
+}
+
+.-done-2 {
+  display: none;
 }
 
 .-time {
   display: none;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .-time {
-    display: none;
-  }
-  .-time :hover {
+
+.card-hover > :hover {
+  cursor: pointer;
+  height: 466px;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
+}
+@media only screen and (min-width: 1024px) {
+  .card-hover :hover > .-done-2 {
+    display: block;
+    position: relative;
+    right: -20px;
     font-size: 1.1rem;
-    display: flex;
-    justify-content: space-between;
     font-weight: 700;
-    width: 170px;
+    width: 218px;
     height: auto;
     padding: 9px 12px;
-    background-color: #F04837;
+    background-color: #422755;
     color: #FFF;
+    margin-bottom: 1rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .-time {
-    display: none;
-  }
-  .-time :hover {
+  .card-hover :hover > .-time {
+    display: block;
+    position: relative;
+    right: -20px;
     font-size: 1.1rem;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     font-weight: 700;
     width: 218px;
@@ -499,7 +502,15 @@ table {
   border: 2px solid #000;
   border-radius: 14px;
   padding: 0.8rem;
-  margin: 0.8rem;
+  margin: 0.5rem;
+}
+@media only screen and (min-width: 1024px) {
+  .card-task {
+    display: flex;
+    flex-direction: column;
+    width: 218px;
+    height: 310px;
+  }
 }
 
 .card-tag {
@@ -523,50 +534,91 @@ table {
 .card-image {
   position: relative;
   z-index: 1;
-  align-self: baseline;
-  -webkit-clip-path: inset(178px 147px);
-  clip-path: inset(178px 147px);
+}
+@media only screen and (min-width: 1024px) {
+  .card-image {
+    display: none;
+  }
+}
+
+.card-image-desktop {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+@media only screen and (min-width: 1024px) {
+  .card-image-desktop {
+    display: block;
+  }
 }
 
 .wrapper-card-info {
-  text-align: left;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
   margin: 0 2px 0 15px;
 }
-.wrapper-card-info .-title {
+@media only screen and (min-width: 1024px) {
+  .wrapper-card-info {
+    margin: 0;
+  }
+}
+
+.-title-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 700;
   line-height: 2rem;
   color: #414141;
 }
-.wrapper-card-info .-title .clock-button {
+.-title-card .clock-button {
   background-color: #FFF;
   border: none;
 }
-.wrapper-card-info .-description {
+@media only screen and (min-width: 1024px) {
+  .-title-card .clock-button {
+    display: none;
+  }
+}
+
+.-description {
   font-size: 0.7rem;
   line-height: 1rem;
 }
-.wrapper-card-info .-description .--legend {
-  font-size: 0.6rem;
+.-description .--legend {
+  font-size: 0.5rem;
   margin-top: 0.5rem;
   color: #414141;
 }
-.wrapper-card-info .-description :first-child {
+@media only screen and (min-width: 1024px) {
+  .-description .--legend {
+    position: relative;
+    bottom: 2.5rem;
+  }
+}
+.-description .-position {
+  bottom: -1.8rem;
+}
+.-description :first-child {
   margin-bottom: 0.5rem;
 }
-.wrapper-card-info .wrapper-deadline {
+@media only screen and (min-width: 1024px) {
+  .-description :first-child {
+    height: 48px;
+  }
+}
+
+.wrapper-deadline {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
 }
-.wrapper-card-info .wrapper-deadline .-text {
+.wrapper-deadline .-text {
   font-weight: 700;
 }
-.wrapper-card-info .wrapper-deadline .-days {
+.wrapper-deadline .-days {
   font-weight: 700;
   font-size: 1.1rem;
   color: #F04837;

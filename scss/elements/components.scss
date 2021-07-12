@@ -82,38 +82,48 @@
   }
   @include responsive_computer() {
     display: none;
-    :hover {
-      font-weight: $font-weight-bold;
-      height: auto;
-      padding: 9px 12px;
-      background-color: $primary-color-violet;
-      color: $all-white;
-    }
   }
+}
+
+.-done-2 {
+  @extend .button-component;
+  display: none;
 }
 
 .-time {
   @extend .button-component;
   display: none;
-  @include responsive_tablet() {
-    display: none;
-    :hover {
+}
+
+.card-hover {
+  > :hover {
+    cursor: pointer;
+    height: 466px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 25%);
+  }
+  :hover > .-done-2 {
+    @include responsive_computer() {
+      display: block;
+      position: relative;
+      right: -20px;
       font-size: 1.1rem;
-      display: flex;
-      justify-content: space-between;
       font-weight: $font-weight-bold;
-      width: 170px;
+      width: 218px;
       height: auto;
       padding: 9px 12px;
-      background-color: $tomato-red;
+      background-color: $primary-color-violet;
       color: $all-white;
+      margin-bottom: 1rem;
     }
   }
-  @include responsive_computer() {
-    display: none;
-    :hover {
+  :hover > .-time {
+    @include responsive_computer() {
+      display: block;
+      position: relative;
+      right: -20px;
       font-size: 1.1rem;
       display: flex;
+      align-items: center;
       justify-content: space-evenly;
       font-weight: $font-weight-bold;
       width: 218px;
@@ -124,6 +134,7 @@
     }
   }
 }
+
 .card-task {
   display: flex;
   flex-direction: row;
@@ -131,7 +142,13 @@
   border: 2px solid $black-box;
   border-radius: 14px;
   padding: 0.8rem;
-  margin: 0.8rem;
+  margin: 0.5rem;
+  @include responsive_computer() {
+    display: flex;
+    flex-direction: column;
+    width: 218px;
+    height: 310px;
+  }
 }
 
 .card-tag {
@@ -155,52 +172,79 @@
 .card-image {
   position: relative;
   z-index: 1;
-  align-self: baseline;
-  -webkit-clip-path: inset(178px 147px);
-  clip-path: inset(178px 147px);
+  @include responsive_computer() {
+    display: none;
+  }
+}
+
+.card-image-desktop {
+  display: none;
+  position: relative;
+  z-index: 1;
+  @include responsive_computer() {
+    display: block;
+  }
 }
 
 .wrapper-card-info {
-  text-align: left;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
   margin: 0 2px 0 15px;
-  .-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.9rem;
-    font-weight: $font-weight-bold;
-    line-height: 2rem;
+  @include responsive_computer() {
+    margin: 0;
+  }
+}
+.-title-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: $font-weight-bold;
+  line-height: 2rem;
+  color: $dark-gray;
+  .clock-button {
+    background-color: $all-white;
+    border: none;
+    @include responsive_computer() {
+      display: none;
+    }
+  }
+}
+.-description {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  .--legend {
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
     color: $dark-gray;
-    .clock-button {
-      background-color: $all-white;
-      border: none;
+    @include responsive_computer() {
+      position: relative;
+      bottom: 2.5rem;
     }
   }
-  .-description {
-    font-size: 0.7rem;
-    line-height: 1rem;
-    .--legend {
-      font-size: 0.6rem;
-      margin-top: 0.5rem;
-      color: $dark-gray;
-    }
-    :first-child {
-      margin-bottom: 0.5rem;
+  .-position {
+    bottom: -1.8rem;
+  }
+  :first-child {
+    margin-bottom: 0.5rem;
+    @include responsive_computer() {
+      height: 48px;
     }
   }
-  .wrapper-deadline {
-    display: flex;
-    flex-direction: row;
-    .-text {
-      font-weight: $font-weight-bold;
-    }
-    .-days {
-      font-weight: $font-weight-bold;
-      font-size: 1.1rem;
-      color: $tomato-red;
-      margin-left: 0.2rem;
-    }
+}
+
+.wrapper-deadline {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  .-text {
+    font-weight: $font-weight-bold;
+  }
+  .-days {
+    font-weight: $font-weight-bold;
+    font-size: 1.1rem;
+    color: $tomato-red;
+    margin-left: 0.2rem;
   }
 }

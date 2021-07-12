@@ -24,7 +24,7 @@
                 <button class="button-component" type="button">Buscar</button>
             </div>
             <div class="navbar-select">
-                <label class= "-label">Organizar por:</label>
+                <label class="-label">Organizar por:</label>
                 <select class="input-component -select" name="select" id="select">
                     <option value="">Prazo</option>
                     <option value="">Nome</option>
@@ -37,12 +37,13 @@
     <main class="container -main">
 
         <div class="wrapper-articles">
-            <article>
-                <span class="card-tag">Prazo curto!</span>
+            <article class="card-hover">
+                <!-- <span class="card-tag">Prazo curto!</span> -->
                 <div class="card-task">
                     <img class="card-image" src="./img/img_task.png" alt="">
+                    <img class="card-image-desktop" src="./img/img_task-2.png" alt="">
                     <div class="wrapper-card-info">
-                        <div class="-title">
+                        <div class="-title-card">
                             <h3>Nome da tarefa</h3>
                             <button class="clock-button">
                                 <img src="./img/clock.png" alt="Alterar prazo">
@@ -61,13 +62,20 @@
                             <p class="--legend">Data de inclusão: há 2 semanas</p>
                         </div>
                     </div>
+                    <button class="button-component -done-2">Concluir</button>
+                    <button class="button-component -time">
+                        <img src="./img/clock-icon.svg">
+                        Alterar Prazo
+                    </button>
                 </div>
+
             </article>
-            <article>
+            <article class="card-hover">
                 <div class="card-task">
                     <img class="card-image" src="./img/img_task.png" alt="">
+                    <img class="card-image-desktop" src="./img/img_task-2.png" alt="">
                     <div class="wrapper-card-info">
-                        <div class="-title">
+                        <div class="-title-card">
                             <h3>Nome da tarefa</h3>
                             <button class="clock-button">
                                 <img src="./img/clock.png" alt="Alterar prazo">
@@ -86,11 +94,12 @@
                     </div>
                 </div>
             </article>
-            <article>
+            <article class="card-hover">
                 <div class="card-task">
                     <img class="card-image" src="./img/img_task.png" alt="">
+                    <img class="card-image-desktop" src="./img/img_task-2.png" alt="">
                     <div class="wrapper-card-info">
-                        <div class="-title">
+                        <div class="-title-card">
                             <h3>Nome da tarefa</h3>
                             <button class="clock-button">
                                 <img src="./img/clock.png" alt="Alterar prazo">
@@ -111,11 +120,12 @@
                     </div>
                 </div>
             </article>
-            <article>
+            <article class="card-hover">
                 <div class="card-task">
                     <img class="card-image" src="./img/img_task.png" alt="">
+                    <img class="card-image-desktop" src="./img/img_task-2.png" alt="">
                     <div class="wrapper-card-info">
-                        <div class="-title">
+                        <div class="-title-card">
                             <h3>Nome da tarefa</h3>
                             <button class="clock-button">
                                 <img src="./img/clock.png" alt="Alterar prazo">
@@ -127,9 +137,113 @@
                                 trata.
                             </p>
                             <button class="button-component -done">Concluir</button>
+                            <p class="--legend -position">Data de inclusão: há 2 semanas</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="card-hover">
+                <!-- <span class="card-tag">Prazo curto!</span> -->
+                <div class="card-task">
+                    <img class="card-image" src="./img/img_task.png" alt="">
+                    <img class="card-image-desktop" src="./img/img_task-2.png" alt="">
+                    <div class="wrapper-card-info">
+                        <div class="-title-card">
+                            <h3>Nome da tarefa</h3>
+                            <button class="clock-button">
+                                <img src="./img/clock.png" alt="Alterar prazo">
+                            </button>
+                        </div>
+                        <div class="-description">
+                            <p>Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que
+                                se
+                                trata.
+                            </p>
+                            <div class="wrapper-deadline">
+                                <p class="-text">Prazo:</p>
+                                <p class="-days">00/00</p>
+                            </div>
+                            <button class="button-component -done">Concluir</button>
                             <p class="--legend">Data de inclusão: há 2 semanas</p>
                         </div>
                     </div>
+                    <button class="button-component -done-2">Concluir</button>
+                    <button class="button-component -time">
+                        <img src="./img/clock-icon.svg">
+                        Alterar Prazo
+                    </button>
+                </div>
+
+            </article>
+            <article class="card-hover">
+                <div class="card-task">
+                    <img class="card-image" src="./img/img_task.png" alt="">
+                    <img class="card-image-desktop" src="./img/img_task-2.png" alt="">
+                    <div class="wrapper-card-info">
+                        <div class="-title-card">
+                            <h3>Nome da tarefa</h3>
+                            <button class="clock-button">
+                                <img src="./img/clock.png" alt="Alterar prazo">
+                            </button>
+                        </div>
+                        <div class="-description">
+                            <p>Descrição da tarefa, o que deve ser feito.
+                            </p>
+                            <div class="wrapper-deadline">
+                                <p class="-text">Prazo:</p>
+                                <p class="-days">00/00</p>
+                            </div>
+                            <button class="button-component -done">Concluir</button>
+                            <p class="--legend">Data de inclusão: há 2 semanas</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="card-hover">
+                <div class="card-task">
+                    <img class="card-image" src="./img/img_task.png" alt="">
+                    <img class="card-image-desktop" src="./img/img_task-2.png" alt="">
+                    <div class="wrapper-card-info">
+                        <div class="-title-card">
+                            <h3>Nome da tarefa</h3>
+                            <button class="clock-button">
+                                <img src="./img/clock.png" alt="Alterar prazo">
+                            </button>
+                        </div>
+                        <div class="-description">
+                            <p>Descrição da tarefa, o que deve ser feito.
+                            </p>
+                            <div class="wrapper-deadline">
+                                <p class="-text">Prazo:</p>
+                                <p class="-days">00/00</p>
+                            </div>
+                            <button class="button-component -done">Concluir</button>
+                            <p class="--legend">Data de inclusão: há 2 semanas</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="card-hover">
+                <div class="card-task">
+                    <img class="card-image" src="./img/img_task.png" alt="">
+                    <img class="card-image-desktop" src="./img/img_task-2.png" alt="">
+                    <div class="wrapper-card-info">
+                        <div class="-title-card">
+                            <h3>Nome da tarefa</h3>
+                            <button class="clock-button">
+                                <img src="./img/clock.png" alt="Alterar prazo">
+                            </button>
+                        </div>
+                        <div class="-description">
+                            <p>Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que
+                                se
+                                trata.
+                            </p>
+                            <button class="button-component -done">Concluir</button>
+                            <p class="--legend -position">Data de inclusão: há 2 semanas</p>
+                        </div>
+                    </div>
+                </div>
             </article>
         </div>
 
