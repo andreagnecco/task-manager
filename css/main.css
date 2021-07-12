@@ -297,6 +297,7 @@ table {
     display: flex;
     flex-direction: row;
     align-items: center;
+    max-width: 990px;
   }
 }
 .container .wrapper-info .image-responsive {
