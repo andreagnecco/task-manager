@@ -86,9 +86,9 @@ git clone https://github.com/andreagnecco/task-manager.git
 ----
 ## **Contato**
 
-## [Portfolio](andreagnecco.com)
-## [Behance](behance.com/andreagnecco)
-## [Linkedin](linkedin.com/in/andrea-gnecco-design)
-## [Github](github.com/andreagnecco)
+- [Portfolio](andreagnecco.com)
+- [Behance](behance.com/andreagnecco)
+- [Linkedin](linkedin.com/in/andrea-gnecco-design)
+- [Github](github.com/andreagnecco)
 
-[⬆ Voltar ao topo](https://github.com/andreagnecco/task-manager)<br>
+[⬆ Voltar ao topo](#)
