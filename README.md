@@ -1,13 +1,9 @@
 # **Task Manager - Desafio Linx**
 >✅ Status: Done 
 
-----
-
 ## **💡 Sobre:** 
 
 Este projeto faz parte do desafio para a vaga de Webdesigner. A proposta consiste em desenvolver o layout HTML/CSS de modelo responsivo proposto na ferramenta Figma.
-
-----
 
 ## **🔧 Ferramentas utilizadas:**
 
@@ -15,16 +11,11 @@ Este projeto faz parte do desafio para a vaga de Webdesigner. A proposta consist
 * IDE: Visual Studio Code;
 * Versionamento: Git/Github.
 
-----
-
 ## **👓 Tecnologias:**
-
 
 * Linguagem **HTML5**;
 * Estilização **CSS3**;
 * Pré-processador de estilos **Sass**.
-
-----
 
 ## **☕ Acesse o projeto**
 
@@ -32,18 +23,13 @@ Você pode acessar o projeto através do link:
 
 [Task Manager](https://andreagnecco.com/task-manager/)
 
-----
-
 ## **💻 Pré-requisitos para desenvolvimento**
 
 Antes de rodar o projeto em seu computador, verifique se você atende aos seguintes requisitos:
 
 * Sistema Operacional: Windows, MacOS ou Linux;
 * Ter o Node instalado: [Link instalação Node](https://nodejs.org/en/download/);
-* Ter o npm instalado: Digite o comando seguinte na linha de comando:
-```
-npm install -g npm
-```
+* Ter o npm instalado;
 ##### [Mais informações](https://docs.npmjs.com/)
 * Ter o sass instalado: Digite o comando seguinte na linha de comando:
 ```
@@ -64,8 +50,6 @@ npm install -g sass
         ```
 * Ter instalada a IDE de sua preferência.
 
-----
-
 ## **⚙️ Execute o projeto**
 
 ### Para executar o projeto em seu computador, siga estas etapas:
@@ -80,11 +64,12 @@ git clone https://github.com/andreagnecco/task-manager.git
 * Acesse a página index.html no navegador de sua preferência.
 
 > Nota: Projeto testado nas últimas versões desktop e mobile dos navegadores: Mozilla Firefox, Google Chrome, Safari e Microsoft Edge (Data 13/07/2021)
-----
+
 ## **👩‍✈️ Quem desenvolveu**
-### Andrea Gnecco - Desenvolvedora Front-end & UX/UI Designer
-----
-## **Contato**
+
+Andrea Gnecco - Desenvolvedora Front-end & UX/UI Designer
+
+### **Contato**
 
 - [Portfolio](andreagnecco.com)
 - [Behance](behance.com/andreagnecco)
