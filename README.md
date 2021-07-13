@@ -91,4 +91,4 @@ git clone https://github.com/andreagnecco/task-manager.git
 ## [Linkedin](linkedin.com/in/andrea-gnecco-design)
 ## [Github](github.com/andreagnecco)
 
-[⬆ Voltar ao topo](#task-manager)<br>
+[⬆ Voltar ao topo](https://github.com/andreagnecco/task-manager)<br>
