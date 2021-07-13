@@ -457,9 +457,10 @@ table {
   display: none;
 }
 
-.card-hover {
+.article-card {
   position: relative;
 }
+
 @media only screen and (min-width: 1024px) {
   .card-hover > :hover {
     cursor: pointer;
