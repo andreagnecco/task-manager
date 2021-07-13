@@ -96,10 +96,12 @@
 }
 
 .card-hover {
-  > :hover {
-    cursor: pointer;
-    height: 466px;
-    box-shadow: 1px 5px 10px rgba(0, 0, 0, 25%);
+  @include responsive_computer() {
+    > :hover {
+      cursor: pointer;
+      height: 466px;
+      box-shadow: 1px 5px 10px rgba(0, 0, 0, 25%);
+    }
   }
   :hover > .-done-2 {
     @include responsive_computer() {
@@ -155,7 +157,7 @@
   display: block;
   position: relative;
   z-index: 2;
-  top: 3rem;
+  top: 3.5rem;
   right: 0.1rem;
   background-color: $primary-color-violet;
   width: 102px;
@@ -167,6 +169,16 @@
   color: $all-white;
   border: none;
   border-radius: 0 5px 5px 0;
+}
+
+.-flag {
+  margin-left: 1rem;
+  color: $tomato-red;
+}
+
+.-red {
+  @extend .card-tag;
+  background-color: $tomato-red;
 }
 
 .card-image {
@@ -246,5 +258,11 @@
     font-size: 1.1rem;
     color: $tomato-red;
     margin-left: 0.2rem;
+  }
+}
+
+.hidden-mobile {
+  @include responsive_mobile() {
+    display: none;
   }
 }

@@ -100,10 +100,12 @@
   display: none;
 }
 
-.card-hover > :hover {
-  cursor: pointer;
-  height: 466px;
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
+@media only screen and (min-width: 1024px) {
+  .card-hover > :hover {
+    cursor: pointer;
+    height: 466px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
+  }
 }
 @media only screen and (min-width: 1024px) {
   .card-hover :hover > .-done-2 {
@@ -156,11 +158,11 @@
   }
 }
 
-.card-tag {
+.card-tag, .-red {
   display: block;
   position: relative;
   z-index: 2;
-  top: 3rem;
+  top: 3.5rem;
   right: 0.1rem;
   background-color: #422755;
   width: 102px;
@@ -172,6 +174,15 @@
   color: #FFF;
   border: none;
   border-radius: 0 5px 5px 0;
+}
+
+.-flag {
+  margin-left: 1rem;
+  color: #F04837;
+}
+
+.-red {
+  background-color: #F04837;
 }
 
 .card-image {
@@ -266,6 +277,12 @@
   font-size: 1.1rem;
   color: #F04837;
   margin-left: 0.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=components.css.map */
