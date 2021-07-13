@@ -96,6 +96,8 @@
 }
 
 .card-hover {
+  position: relative;
+
   @include responsive_computer() {
     > :hover {
       cursor: pointer;
@@ -155,10 +157,9 @@
 
 .card-tag {
   display: block;
-  position: relative;
+  position: absolute;
   z-index: 2;
-  top: 3.5rem;
-  right: 0.1rem;
+  top: 2rem;
   background-color: $primary-color-violet;
   width: 102px;
   height: 29px;

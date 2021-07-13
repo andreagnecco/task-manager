@@ -100,6 +100,9 @@
   display: none;
 }
 
+.card-hover {
+  position: relative;
+}
 @media only screen and (min-width: 1024px) {
   .card-hover > :hover {
     cursor: pointer;
@@ -160,10 +163,9 @@
 
 .card-tag, .-red {
   display: block;
-  position: relative;
+  position: absolute;
   z-index: 2;
-  top: 3.5rem;
-  right: 0.1rem;
+  top: 2rem;
   background-color: #422755;
   width: 102px;
   height: 29px;
