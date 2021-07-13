@@ -1,11 +1,11 @@
   /* Imports */
 
-  @import './generic/reset.scss';
+  @import './generic/_reset.scss';
 
   @import './settings/_colors.scss';
   @import './settings/_responsive_mixins.scss';
   @import './settings/_typography.scss';
   
-  @import './elements/containers.scss';
-  @import './elements/components.scss';
+  @import './elements/_containers.scss';
+  @import './elements/_components.scss';
 
